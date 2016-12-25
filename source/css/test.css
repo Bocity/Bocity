@@ -1,0 +1,98 @@
+@import url(../css/animate.css);
+.panel {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+.panel__vertical {
+  display: table-cell;
+  vertical-align: middle; }
+
+.panel-title {
+  margin: 0 0 5px 0;
+  font-size: 2.5em;
+  letter-spacing: 4px;
+  color: #FFF; }
+
+.panel-subtitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  color: #cccccc;
+  -webkit-font-smoothing: antialiased; }
+
+.panel-cover {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  background: url(../images/background-cover.jpg) top left no-repeat #666666;
+  background-size: cover; }
+
+.panel-corver--collapsed {
+  width: 0%;
+  height: 0%;
+	display:none;
+  z-index: -999;
+   }
+
+.panel-cover--overlay {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(68, 68, 68, 0.2);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(68, 68, 68, 0.6)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
+  background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); }
+
+.panel-cover__logo {
+  margin-bottom: .2em; }
+
+.panel-cover__description {
+  margin: 0 30px; }
+
+.panel-cover__divider {
+  width: 50%;
+  margin: 20px auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.14); }
+
+.panel-cover__divider--secondary {
+  width: 15%; }
+
+.panel-main {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+
+.panel-main__inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 800;
+  padding: 0 60px; }
+
+.panel-main__content {
+  max-width: 620px;
+  margin: 0 auto; }
+
+.panel-main__content--fixed {
+  width: 480px;
+  transition: width 1s;
+  -webkit-transition: width 1s;
+  /* Safari */ }
+
+.panel-inverted {
+  font-weight: 100;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+  .panel-inverted a {
+    color: #FFF; }
